@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+  body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 3500%;
+    animation: gradient 13s ease infinite;
+    background-repeat: no-repeat;
+  }
+  h1{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 22px;
+  } 
+  h2{
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 34px;
+    color: black;
+    text-align: center; 
+  }
+  h3{
+    font-family: monospace;
+    font-size: 56px;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke-width: 1.6px;
+    -webkit-text-stroke-color: black;
+  }
+  h4{
+    font-size: 34px;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bold;
+  }
+  #myHead{
+    font-size: 28px;
+    font-weight: lighter;
+    font-family: 'Yusei Magic', sans-serif;
+  }
+  #myBody{
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .text {
+    position: absolute;
+    top: 35%; 
+    right: 50%;
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 6em;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+  .content {padding:20px;}
+
+  .topnav {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Cinzel', serif;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .topnav a.active {
+    background-color: #520832;
+    color:white;
+  }
+  .topnav-right {
+    float: right;
+  }
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+    
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+  div.sticky {
+    position: sticky;
+    top: 0;
+  }
+.snowflake {
+  font-size: 1.2em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+  }
+  @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+  @-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}
+  @keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+  @keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+  #btnScrollToTop{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #e62739;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
+  }
+  #btnScrollToTop:hover{
+    background: #cc2333;
+  }
+  #button{
+    border: 2px solid white;
+    background-color:transparent;
+    color: white;
+    height: 55px;
+    width: 205px;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: 43%;
+  }
+  #button:hover{
+    background: #ed4640;
+    cursor: pointer;
+    color: white;
+  }
+  #myHeading{
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 26px;
+  }
+  #myState{
+    text-align: center;
+    font-size: 20px;
+  }
+  #myImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15%;
+  }
+  #myM{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 579px;
+    width: 750px;
+  }
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  .column1 {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: black;
+    font-size: 20px;
+    font-family: serif;
+  }
+  p{
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  #myName{
+    font-family: sans-serif;
+  }
+  #demo{
+    font-size: 23px;
+    text-align: center;
+  }
+  #demo1{
+    font-size: 23px;
+    text-align: center;
+  }
+  #demo2{
+    font-size: 23px;
+    text-align: center;
+  }
+  #demo3{
+    font-size: 23px;
+    text-align: center;
+  }
+  .button1{
+    font-size: 20px;
+    background-color:#520832;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  .button1:hover{
+    background-color: #7a2653;
+  }
